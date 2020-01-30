@@ -15,7 +15,7 @@ server.use('/api/auth', authRouter);
 server.use('/api/users', userRouter);
 
 server.get('/', (req, res) => {
-  res.send(`<h2>JWT authentication project working</h2>`);
+  res.send(200);
 });
 
 module.exports = server;
