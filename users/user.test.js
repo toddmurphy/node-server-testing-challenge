@@ -1,11 +1,11 @@
 const request = require('supertest');
-
+const server = require('../api/server');
 const userRouter = require('./userRouter');
 
 //returns the status code 200
 describe('GET', function() {
   it('should return 200', function() {
-    return request(userRouter)
+    return request(server)
       .get('/')
       .then(res => {
         //check that the status code is 200
