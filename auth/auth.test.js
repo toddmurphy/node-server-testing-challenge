@@ -1,7 +1,7 @@
 const Users = require('../users/userModel');
 const db = require('../data/dbConfig');
 
-//post a new user to database test
+//post a new user to database test  (this test works)
 describe('users model', function() {
   describe('test environment', function() {
     it('should use the testing environment', function() {
